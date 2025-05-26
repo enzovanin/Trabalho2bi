@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Lanchonete - Pedido</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Faca seu pedido</h1>
+
+    <p>Escolha um produto:</p>
+    <select id="produto">
+      <option value="cachorro">Cachorro Quente - R$11,00</option>
+      <option value="bauru">Bauru - R$8,50</option>
+      <option value="misto">Misto Quente - R$8,00</option>
+      <option value="hamburguer">Hamburger - R$9,00</option>
+      <option value="cheese">Cheeseburger - R$10,00</option>
+      <option value="refri">Refrigerante - R$4,50</option>
+    </select>
+
+    <p>Quantidade:</p>
+    <input type="number" id="quantidade" min="1">
+
+    <button onclick="adicionarAoPedido()">Adicionar ao pedido</button>
+
+    <h2>Itens do pedido:</h2>
+    <ul id="listaPedido"></ul>
+
+    <h3 id="totalFinal"></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
