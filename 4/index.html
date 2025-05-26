@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>Calculadora de Salario</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Salario</h1>
+
+    <p>Salario atual (R$):</p>
+    <input type="number" id="salario" step="0.01" />
+
+    <p>Escolha o cargo:</p>
+    <select id="cargo">
+      <option value="101">Gerente</option>
+      <option value="102">Engenheiro</option>
+      <option value="103">Tecnico</option>
+      <option value="outro">Outro</option>
+    </select>
+
+    <button onclick="calcularSalario()">Calcular</button>
+
+    <div id="resultadoSalario"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
