@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Calculadora de Imposto DETRAN</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Imposto - DETRAN</h1>
+
+    <p>Ano de fabricacao do carro:</p>
+    <input type="number" id="ano" />
+
+    <p>Valor de tabela (R$):</p>
+    <input type="number" id="valor" step="0.01" />
+
+    <button onclick="calcularImposto()">Calcular Imposto</button>
+
+    <p id="resultadoImposto"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
