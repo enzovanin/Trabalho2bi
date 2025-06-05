@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Sistema de Pagamento</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pagamento de Professor</h1>
+    <form id="pagamentoForm">
+      <div class="input-group">
+        <div class="input-title">Nivel do Professor</div>
+        <select id="nivel" required>
+          <option value="">-- Selecione o nivel --</option>
+          <option value="1">Nivel 1 - R$12,00/h</option>
+          <option value="2">Nivel 2 - R$17,00/h</option>
+          <option value="3">Nivel 3 - R$25,00/h</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <div class="input-title">Horas/aula por semana</div>
+        <input type="number" id="horas" required />
+      </div>
+
+      <button type="submit">Calcular Salario</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
